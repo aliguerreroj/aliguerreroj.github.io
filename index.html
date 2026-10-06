@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ali Guerrero · Data & AI Engineer</title>
+<meta name="description" content="Portafolio de Ali Guerrero: ingeniería de datos en Azure Databricks, MLOps en AWS y sistemas de IA generativa en producción.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1f2b; --muted: #5b6475; --line: #e3e7ee;
+    --accent: #1f3864; --card: #f6f8fb; --chip: #e8eef9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f141c; --fg: #e8ecf3; --muted: #9aa5b8; --line: #243044;
+      --accent: #7fa6ee; --card: #151c27; --chip: #1c2a42;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 2.2rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .role { color: var(--accent); font-weight: 600; margin: 0 0 12px; }
+  .lead { color: var(--muted); max-width: 640px; margin: 0 0 20px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; }
+  .links a {
+    color: var(--fg); text-decoration: none; border: 1px solid var(--line);
+    padding: 7px 14px; border-radius: 999px; font-size: 0.92rem;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+  h2 {
+    font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--accent); margin: 44px 0 14px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 18px 18px 16px;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 1.02rem; }
+  .card p { margin: 0 0 10px; color: var(--muted); font-size: 0.95rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tags span {
+    background: var(--chip); color: var(--accent); font-size: 0.78rem;
+    padding: 2px 9px; border-radius: 999px;
+  }
+  .card a { color: var(--accent); font-size: 0.9rem; text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  .skills { display: grid; gap: 10px; }
+  .skills div { font-size: 0.96rem; }
+  .skills b { display: inline-block; min-width: 150px; }
+  .job { margin-bottom: 16px; }
+  .job h3 { margin: 0; font-size: 1rem; }
+  .job small { color: var(--muted); }
+  .job p { margin: 4px 0 0; color: var(--muted); font-size: 0.95rem; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.88rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Ali Guerrero</h1>
+    <p class="role">Data Engineer · AI Engineer</p>
+    <p class="lead">
+      Construyo pipelines de datos en Azure Databricks, sistemas MLOps en AWS y aplicaciones de IA
+      generativa que llegan a producción. Cerca de 4 años de experiencia en ingeniería de datos,
+      ciencia de datos y backend.
+    </p>
+    <nav class="links">
+      <a href="https://github.com/aliguerreroj">GitHub</a>
+      <a href="https://www.linkedin.com/in/aliguerrero-data/">LinkedIn</a>
+      <a href="mailto:aliguerreroj24@gmail.com">aliguerreroj24@gmail.com</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Proyectos</h2>
+    <div class="grid">
+
+      <article class="card">
+        <h3>Plataforma de datos SaaS multi-tenant</h3>
+        <p>Pipeline PySpark + Delta Lake con capas Bronze/Silver/Gold, dimensiones SCD Type 2,
+           integración continua, infraestructura con Terraform y prácticas de code review.</p>
+        <div class="tags"><span>PySpark</span><span>Delta Lake</span><span>Medallion</span><span>Terraform</span><span>CI</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/aliguerreroj/saas-data-platform-mariposa">Ver repositorio →</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Detección de fraude en tiempo real</h3>
+        <p>Pipeline de streaming sobre 6.3M de transacciones en Azure Databricks con arquitectura
+           Medallion; modelo XGBoost/GBT desplegado con MLflow, ~5 ms de latencia.</p>
+        <div class="tags"><span>Azure Databricks</span><span>Structured Streaming</span><span>XGBoost</span><span>MLflow</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/aliguerreroj/fraud-detection-azure-databricks">Ver repositorio →</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Credit Risk MLOps (AWS)</h3>
+        <p>Ciclo de vida completo para scoring de riesgo crediticio: Glue, SageMaker Pipelines, doble
+           despliegue validado con pruebas A/B, monitoreo de drift y reentrenamiento automatizado.</p>
+        <div class="tags"><span>AWS Glue</span><span>SageMaker</span><span>Lambda</span><span>EventBridge</span><span>Terraform</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/aliguerreroj/credit-risk-mlops">Ver repositorio →</a> · <a href="https://github.com/aliguerreroj/credit-risk-eda">Análisis exploratorio previo →</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Agente de soporte con RAG híbrido y guardrails</h3>
+        <p>Agente de soporte con RAG híbrido, tool de pedidos y guardrails en capas, construido como
+           prueba técnica de AI Engineer.</p>
+        <div class="tags"><span>Python</span><span>RAG</span><span>Tool-calling</span><span>Guardrails</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/aliguerreroj/guerrero_ali_prueba_aiengineer">Ver repositorio →</a></p>
+      </article>
+
+      <article class="card">
+        <h3>ROGII Wellbore Geology Prediction (Kaggle)</h3>
+        <p>Competencia de Kaggle, resuelta en solitario: predicción de geología de pozos con una
+           solución en dos motores, ajuste de plano estructural más alineación de registros GR con
+           programación dinámica restringida. RMSE privado de 14.57 ft.</p>
+        <div class="tags"><span>Kaggle</span><span>Python</span><span>Programación dinámica</span><span>Series de tiempo</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/aliguerreroj/rogii-wellbore-geology-prediction">Ver repositorio →</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Agente de cotización con arquitectura grounded</h3>
+        <p>Bot de Telegram en producción: el LLM solo extrae la intención y redacta la respuesta; un
+           motor determinista sobre PostgreSQL calcula todos los precios. 239 pruebas automatizadas.</p>
+        <div class="tags"><span>TypeScript</span><span>Tool-calling</span><span>PostgreSQL</span><span>Vitest</span></div>
+      </article>
+
+      <article class="card">
+        <h3>Asistente de ventas por WhatsApp (RAG)</h3>
+        <p>Búsqueda semántica de inventario con embeddings y pgvector, integrada con Supabase y
+           traspaso a humano vía Chatwoot.</p>
+        <div class="tags"><span>RAG</span><span>pgvector</span><span>LangChain</span><span>Supabase</span></div>
+      </article>
+
+      <article class="card">
+        <h3>Predicción de churn y segmentación de clientes</h3>
+        <p>Random Forest (ROC-AUC 0.835) sobre 7,043 clientes de telecomunicaciones y segmentación
+           RFM + K-Means sobre más de 50,000 registros.</p>
+        <div class="tags"><span>Scikit-learn</span><span>Random Forest</span><span>K-Means</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/aliguerreroj/churn-prediction-telecom">Churn →</a> · <a href="https://github.com/aliguerreroj/Customer-Segmentation-Analysis-for-an-E-commerce-">Segmentación →</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Dashboard de marketing en Power BI</h3>
+        <p>Vista ejecutiva de analítica de marketing con datos sintéticos generados en Python, medidas
+           DAX y filtros interactivos entre canales.</p>
+        <div class="tags"><span>Power BI</span><span>DAX</span><span>Python</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/aliguerreroj/improvado-marketing-dashboard">Ver repositorio →</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Monitor de campañas (LeadsEngine)</h3>
+        <p>Dashboard de rendimiento de campañas con Next.js, TypeScript, Prisma y PostgreSQL.</p>
+        <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/aliguerreroj/leads-engine-monitor">Ver repositorio →</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Detección de neumonía con CNN</h3>
+        <p>Clasificación de radiografías de tórax con TensorFlow/Keras y una app interactiva en Gradio
+           (caso del Máster).</p>
+        <div class="tags"><span>TensorFlow</span><span>CNN</span><span>Gradio</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/aliguerreroj/pneumonia-detection-cnn">Ver repositorio →</a></p>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Stack</h2>
+    <div class="skills">
+      <div><b>Datos</b> Azure Databricks, PySpark, Delta Lake, Azure Data Factory, SQL, PostgreSQL</div>
+      <div><b>IA generativa</b> LangChain, RAG, FAISS, pgvector, tool-calling, n8n, APIs de LLMs</div>
+      <div><b>ML y MLOps</b> MLflow, XGBoost, SageMaker Pipelines, monitoreo de drift</div>
+      <div><b>Cloud e infraestructura</b> AWS (Glue, Lambda, EventBridge), Terraform, GitHub Actions</div>
+      <div><b>Backend</b> Python, FastAPI, TypeScript/Node.js</div>
+      <div><b>Reportes</b> Power BI (DAX, Power Query)</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experiencia</h2>
+    <div class="job">
+      <h3>AI &amp; Data Engineer independiente <small>· 2025 – Presente</small></h3>
+      <p>Sistemas de IA y pipelines de datos para clientes; contrato de AI Developer en LeadsEngine (2026).</p>
+    </div>
+    <div class="job">
+      <h3>Data Engineer &amp; Data Scientist, Kronus Games <small>· 2022 – 2025</small></h3>
+      <p>Pipelines ETL/ELT con PySpark en Azure Databricks, modelo de fraude en producción y dashboards en Power BI.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Formación</h2>
+    <div class="job">
+      <h3>Máster en Data Science &amp; Business Analytics <small>· IMMUNE Technology Institute · 2025 – 2026</small></h3>
+    </div>
+    <div class="job">
+      <h3>Ingeniería de Software <small>· UPT Agroindustrial del Estado Táchira · 2019 – 2024</small></h3>
+    </div>
+  </section>
+
+  <footer>Ali Alejandro Guerrero Jaimes · aliguerreroj24@gmail.com</footer>
+</div>
+</body>
+</html>
